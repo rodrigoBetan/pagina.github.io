@@ -14,8 +14,8 @@ function addTodo() {
     }
 
     // Verifica si la fecha es válida y si está en un día de lunes a sábado
-    const dueDateObject = new Date(dueDate + "T00:00:00");
-    const dias = dueDateObject.getDay();
+    const dueDateObject = new Date(dueDate);
+    const dias = dueDateObject.getUTCDay();
 
     if (dias < 1 || dias > 6) { // 1 es Lunes y 6 es Sábado
         alert("Por favor, elige una fecha de lunes a sábado.");
@@ -23,7 +23,7 @@ function addTodo() {
     }
 
     // Agregar la tarea al array
-    todos.push({ title: title, dueDate: dueDateObject.toISOString() });
+    todos.push({ title: title, dueDate: dueDate });
     saveTodos(); // Guarda los cambios
     render(); // Renderiza la lista de tareas
 }
