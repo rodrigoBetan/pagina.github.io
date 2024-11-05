@@ -1,0 +1,131 @@
+
+/* Estilo para el fondo de toda la página */
+body {
+   /* background-color: #e3f2fd;*/
+    background: linear-gradient(135deg, #f7f3e9, #e0f7e9);
+    font-family: Arial, sans-serif; /* Fuente de la página */
+    margin: 0; /* Elimina los márgenes alrededor de la página */
+    padding: 0; /* Elimina el relleno */
+}
+
+/* Estilos cuador de texto */
+#todo-title {
+    background: linear-gradient(135deg, #f7f3e9, #e0f7e9);
+    width: 30%; /* O el tamaño que desees */
+    height: 100px; /* Ajusta la altura según lo necesario */
+    padding: 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    border: 1px solid rgb(36, 36, 102); /* Borde del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    resize: vertical; /* Permite el redimensionamiento solo vertical */
+}
+/* Estilos fecha */
+#date-picker {
+    background: linear-gradient(135deg, #f7f3e9, #e0f7e9);
+    width: 200px; /* Ajusta el ancho según lo que necesites */
+    height: 40px; /* Ajusta la altura para que sea más grande */
+    padding: 5px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin-left: 50px; /* Aumenta el espacio a la izquierda */
+    vertical-align: top; /* Alinea la parte superior con el texto */
+    border: 1px solid rgb(36, 36, 102); /* Borde del campo */
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-block; /* Permite alinearlo en línea con el texto */
+    
+}
+
+
+/* Estilos para la cuadrícula de lunes a sábado */
+.lisemana {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Cambiado a 6 columnas para incluir sábado */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.columnas {
+    border: 1px solid rgb(36, 36, 102);
+    padding: 10px;
+    min-height: 100px;
+}
+
+.titulo {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilo para el botón guardar */
+/* Contenedor para alinear el campo de fecha y el botón */
+
+
+
+/* Estilo para el botón guardar */
+#guardar-button {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-left: 100px; /* Espacio a la izquierda del botón */
+    margin-top: -50px;
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+#guardar-button:hover {
+    background-color: #45a049; /* Color de fondo al pasar el mouse */
+}
+
+
+/* Estilo para la sección de tareas completadas */
+#completed-tasks-list {
+    margin-top: 20px; /* Margen superior */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid rgb(36, 36, 102); /* Borde gris */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+.completed-task {
+    padding: 5px; /* Espaciado interno */
+    background-color: #db1515; /* Color de fondo gris claro */
+    margin: 5px 0; /* Margen entre tareas */
+    border-radius: 3px; /* Bordes redondeados */
+}
+
+/* Estilo para el botón de agregar tarea completada (opcional) */
+#add-completed-task {
+    background-color: #007BFF; /* Color de fondo azul */
+    color: white; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+#add-completed-task:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+/*BOTON PARA ELIMINAR VACIAR TAREAS*/
+button {
+    background-color: rgb(192, 99, 99);
+    color: white; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar en línea */
+    font-size: 18px; /* Tamaño de fuente */
+    margin-left: 100px; /* Espacio a la izquierda del botón */
+    margin-top: 20px; /* Espacio superior positivo para separar del texto */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    border-radius: 6px; /* Bordes redondeados */
+}

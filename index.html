@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENDA DE LA SEMANA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Carga de Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+
+</head>
+<body>
+    <textarea id="todo-title" placeholder="Ingrese tarea que desea " rows="4" cols="50"></textarea>
+    <input id="date-picker" type="date" />
+    <button id="guardar-button" onclick="addTodo()">Guardar</button>
+    
+   
+
+
+    <div class="lisemana">
+        <div class="columnas" id="LUNES">
+            <div class="titulo">LUNES</div>
+        </div>
+        <div class="columnas" id="MARTES">
+            <div class="titulo">MARTES</div>
+        </div>
+        <div class="columnas" id="MIERCOLES">
+            <div class="titulo">MIERCOLES</div>
+        </div>
+        <div class="columnas" id="JUEVES">
+            <div class="titulo">JUEVES</div>
+        </div>
+        <div class="columnas" id="VIERNES">
+            <div class="titulo">VIERNES</div>
+        </div>
+        <div class="columnas" id="SABADO">
+            <div class="titulo">SABADO</div>
+        </div>
+    </div>
+
+    <!-- Sección para mostrar tareas completadas -->
+    <div>
+        <h3>Tareas Completadas del Mes</h3>
+        <div id="completed-tasks-list"></div>
+    </div>
+
+<div>
+  
+    <canvas id="completedTasksChart" width="10" height="20"></canvas>
+    <button onclick="clearCompletedTodos()">ELIMINAR TAREAS</button>
+</div>
+
+
+    <!-- Tu script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
